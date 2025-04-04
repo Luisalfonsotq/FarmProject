@@ -56,6 +56,8 @@ import Tarjeta from './components/Tarjeta.vue';
 </template>
 <style scoped>
   .fila{
-    background-color: #828222;
+    background-color: #33691e;
+    height: 500px;
+    
   }
 </style>

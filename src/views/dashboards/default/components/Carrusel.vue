@@ -1,14 +1,20 @@
 <template>
   <v-card class="mx-auto card-carousel rounded-md" elevation="" max-width="444">
-    <v-carousel :continuous="true" :show-arrows="true" class="rounded-md" delimiter-icon="mdi-square" height="300"
-      hide-delimiters>
+    <v-carousel 
+    :continuous="false" 
+    :show-arrows="false" 
+    class="rounded-md" 
+    delimiter-icon="mdi-square" 
+    height="300"
+    hide-delimiters
+    cycle>
       <v-carousel-item class="position-relative" v-for="(data, i) in info" :key="i" :src="images[i]" aspect-ratio="16/9"
         cover>
         <v-hover v-slot="{ props: hoverProps, isHovering }">
           <v-sheet v-bind="hoverProps" :class="[
             'mx-auto',
             isHovering ? 'opacity-100' : 'opacity-50'
-          ]" color="secondary" class="position-absolute bottom-0">
+          ]" color="#ffffff" class="position-absolute bottom-0">
             <div class="d-flex fill-height justify-center align-center carouselText">
               <div class="text-h3">
                 {{ data }}
@@ -25,42 +31,6 @@
   
 </template>
 
-
-<!-- <template>
-  <v-app>
-
-    
-
-  <v-carousel
-
-      height="650"
-      width="auto"
-      show-arrows="hover"
-      cycle
-      hide-delimiter-background
-      class="carousel"
-    >
-     
-      <v-carousel-item
-        v-for="(data, i) in info"
-        :key="i"
-        :src="images[i]" 
-        aspect-ratio="16/9"
-        cover>
-        <v-sheet>
-          <div class="d-flex fill-height justify-center align-center carouselText">
-            <div class="text-h3">
-            {{ data }}
-            </div>
-          </div>
-        </v-sheet> 
-      </v-carousel-item>
-
-    </v-carousel>
-
-  </v-app>
-
-</template> -->
 
 <script setup>
 
@@ -80,6 +50,7 @@ const info = [
 <style scoped>
 .card-carousel{
   background: transparent !important;
+  margin: 50px;
 }
 .carousel {
   border-radius: 25px;

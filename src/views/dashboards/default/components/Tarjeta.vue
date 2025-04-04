@@ -1,8 +1,10 @@
 <template>
   <div class="empanada">
     <div class="seccion">
-      <img src="https://cdn.pixabay.com/photo/2017/06/04/00/08/cebu-2370041_1280.jpg" alt="" srcset="" class="rounded-circle">
-
+      <img 
+       :width="400"
+      aspect-ratio="16/9" 
+      class="logo" src="/public/HERDIX-LOGO-copia.svg">
     </div>
     <div class="seccion">
 
@@ -66,14 +68,20 @@ align-items: center;
 }
 .empanada>div:first-child{
 
-  width: 100px !important;
-  height: 100px;
+  width: 200px !important;
+  height: auto;
 }
 .empanada>div:last-child>p{
-  background: #b88917;
+  background: white;
   padding: 10px;
-  height: 200px;
+  height: 150px;
   border-bottom-left-radius: 180px;
   border-bottom-right-radius: 180px;
 }
+.logo{
+  width: 100%;
+  height: auto;
+  
+}
+
 </style>
