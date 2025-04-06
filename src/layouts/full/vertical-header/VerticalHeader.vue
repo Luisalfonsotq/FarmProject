@@ -5,8 +5,8 @@ import { useCustomizerStore } from '../../../stores/customizer';
 import { BellIcon, SettingsIcon, SearchIcon, Menu2Icon } from 'vue-tabler-icons';
 
 // dropdown imports
-import NotificationDD from './NotificationDD.vue';
-import ProfileDD from './ProfileDD.vue';
+// import NotificationDD from './NotificationDD.vue';
+// import ProfileDD from './ProfileDD.vue';
 import Searchbar from './SearchBarPanel.vue';
 
 const customizer = useCustomizerStore();
@@ -40,6 +40,7 @@ function searchbox() {
     >
       <Menu2Icon size="20" stroke-width="1.5" />
     </v-btn>
+    <v-btn class="ms-4">HERDIX</v-btn>
 
     <!-- search mobile -->
     <v-btn
@@ -75,7 +76,7 @@ function searchbox() {
     <!-- ---------------------------------------------- -->
     <!-- Notification -->
     <!-- ---------------------------------------------- -->
-    <v-menu :close-on-content-click="false">
+    <!-- <v-menu :close-on-content-click="false">
       <template v-slot:activator="{ props }">
         <v-btn icon class="text-secondary mx-3" color="lightsecondary" rounded="sm" size="small" variant="flat" v-bind="props">
           <BellIcon stroke-width="1.5" size="22" />
@@ -84,12 +85,12 @@ function searchbox() {
       <v-sheet rounded="md" width="330" elevation="12">
         <NotificationDD />
       </v-sheet>
-    </v-menu>
+    </v-menu> -->
 
     <!-- ---------------------------------------------- -->
     <!-- User Profile -->
     <!-- ---------------------------------------------- -->
-    <v-menu :close-on-content-click="false">
+    <!-- <v-menu :close-on-content-click="false">
       <template v-slot:activator="{ props }">
         <v-btn class="profileBtn text-primary" color="lightprimary" variant="flat" rounded="pill" v-bind="props">
           <v-avatar size="30" class="mr-2 py-2">
@@ -98,9 +99,27 @@ function searchbox() {
           <SettingsIcon stroke-width="1.5" />
         </v-btn>
       </template>
+
       <v-sheet rounded="md" width="330" elevation="12">
         <ProfileDD />
       </v-sheet>
+      <v-sheet rounded="md" width="330" elevation="12">
+        <h1>HOLA</h1>
+      </v-sheet>
     </v-menu>
+     -->
+    
+    <v-btn class="ms-4">Nosotros</v-btn>
+    <v-btn class="ms-4 boton"  rounded="xl" elevation="2" >Iniciar Sesión</v-btn>
+    <v-btn class="ms-4" color="white" rounded="xl" elevation="2" variant="flat">Registrarse</v-btn>
+
   </v-app-bar>
 </template>
+
+<style>
+.boton{
+  background-color: black;
+  color: white;
+  
+}
+</style>

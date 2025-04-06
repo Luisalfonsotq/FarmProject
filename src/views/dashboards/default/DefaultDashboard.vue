@@ -7,6 +7,8 @@
 // import PopularStocks from './components/PopularStocks.vue';
 import Carrusel from './components/Carrusel.vue';
 import Tarjeta from './components/Tarjeta.vue';
+import Nosotros from './components/Nosotros.vue';
+
 </script>
 
 <template>
@@ -16,9 +18,11 @@ import Tarjeta from './components/Tarjeta.vue';
       <Carrusel />
     </v-col>
 
-    <v-col cols="6" md="5">
+    <v-col cols="6" md="5" class="card">
       <Tarjeta />
     </v-col>
+
+    
   
     <!-- -------------------------------------------------------------------- -->
     <!-- Total Earning -->
@@ -53,11 +57,28 @@ import Tarjeta from './components/Tarjeta.vue';
       <PopularStocks />
     </v-col> -->
   </v-row>
+  <br>
+  <v-row class="fila1 text-white justify-center" cols="12" md="5" >
+    <div >
+      <Nosotros/>
+    </div>
+  </v-row>
 </template>
+
 <style scoped>
   .fila{
     background-color: #33691e;
     height: 500px;
-    
+    align-items: center;
+  }
+  .fila1{
+    background-color:#568142;
+    height: 500px;
+    align-items: center;
+  }
+
+
+  .card{
+    align-items: center;
   }
 </style>
