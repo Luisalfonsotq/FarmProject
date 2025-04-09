@@ -3,6 +3,7 @@ import { ref } from 'vue';
 import { useCustomizerStore } from '../../../stores/customizer';
 // Icon Imports
 import { BellIcon, SettingsIcon, SearchIcon, Menu2Icon } from 'vue-tabler-icons';
+import Registrarse from './Registrarse.vue';
 
 // dropdown imports
 // import NotificationDD from './NotificationDD.vue';
@@ -17,7 +18,7 @@ function searchbox() {
 </script>
 
 <template>
-  <v-app-bar elevation="0" height="80">
+  <v-app-bar elevation="0" height="80" class="header">
     <v-btn
       class="hidden-md-and-down text-secondary"
       color="lightsecondary"
@@ -111,15 +112,13 @@ function searchbox() {
     
     <v-btn class="ms-4">Nosotros</v-btn>
     <v-btn class="ms-4 boton"  rounded="xl" elevation="2" >Iniciar Sesión</v-btn>
-    <v-btn class="ms-4" color="white" rounded="xl" elevation="2" variant="flat">Registrarse</v-btn>
+    <Registrarse/>
 
   </v-app-bar>
 </template>
 
 <style>
-.boton{
-  background-color: black;
-  color: white;
-  
+.header{
+  padding: 12px;  
 }
 </style>
