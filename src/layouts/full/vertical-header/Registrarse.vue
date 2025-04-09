@@ -41,7 +41,7 @@
                 sm="6"
               >
                 <v-text-field
-                  label="Password*"
+                  label="Contraseña*"
                   type="password"
                   required
                 ></v-text-field>
