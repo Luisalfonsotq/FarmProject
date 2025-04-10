@@ -8,7 +8,7 @@ import AuthRegister from '../authForms/AuthRegister.vue';
     <!---Left Part-->
     <v-col cols="12" class="d-flex align-center bg-lightprimary">
       <v-container>
-        <div class="pa-7 pa-sm-12">
+        <div class="pa-1 pa-sm-12">
           <v-row justify="center">
             <v-col cols="12" lg="10" xl="6" md="7">
               <v-card elevation="0" class="loginBox">
@@ -40,7 +40,7 @@ import AuthRegister from '../authForms/AuthRegister.vue';
 </template>
 <style lang="scss">
 .loginBox {
-  max-width: 475px;
+  max-width: 500px;
   margin: 0 auto;
 }
 </style>

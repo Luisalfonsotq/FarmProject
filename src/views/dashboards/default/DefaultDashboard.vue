@@ -22,6 +22,7 @@ import Nosotros from './components/Nosotros.vue';
       <Tarjeta />
     </v-col>
 
+   
     
   
     <!-- -------------------------------------------------------------------- -->
@@ -63,6 +64,8 @@ import Nosotros from './components/Nosotros.vue';
       <Nosotros/>
     </div>
   </v-row>
+
+ 
 </template>
 
 <style scoped>

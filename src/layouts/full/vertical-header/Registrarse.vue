@@ -18,60 +18,13 @@
         <v-card
           prepend-icon="mdi-account"
           title="Registrarse"
-        max-height="900"
+        max-height="auto"
 
         >
-          <v-card-text>
-            <v-row>
-               <v-col
-                cols="12"
-                md="4"
-                sm="6"
-              >
-                <v-text-field
-                  label="Email*"
-                  required
-                ></v-text-field>
-              </v-col>
-            </v-row>
-            <v-row>
-              <v-col
-                cols="12"
-                md="4"
-                sm="6"
-              >
-                <v-text-field
-                  label="Contraseña*"
-                  type="password"
-                  required
-                ></v-text-field>
-              </v-col>
-            </v-row>
-            <v-row>
-              <v-col
-                cols="12"
-                md="4"
-                sm="6"
-              >
-                <v-text-field
-                  label="Confirm Password*"
-                  type="password"
-                  required
-                ></v-text-field>
-              </v-col>
-            </v-row>
-            <small class="text-caption text-medium-emphasis">*indicates required field</small>
-            <v-divider></v-divider>
-        
-            <v-row dense>
-              <v-btn>hola2</v-btn>
-            </v-row>
-            <v-row>
-              <v-btn>hola</v-btn>
-            </v-row>
-  
-          </v-card-text>
-          <v-divider></v-divider>
+        <div>
+          <RegisterPage/>
+        </div>
+
           <v-card-actions>
             <v-spacer></v-spacer>
 
@@ -93,7 +46,8 @@
     </div>
   </template>
   <script setup>
-  import { shallowRef } from 'vue'
+  import RegisterPage from '@/views/authentication/auth/RegisterPage.vue';
+import { shallowRef } from 'vue'
 
   const dialog = shallowRef(false)
 </script>
