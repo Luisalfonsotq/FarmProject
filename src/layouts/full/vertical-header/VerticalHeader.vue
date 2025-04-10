@@ -9,6 +9,7 @@ import { BellIcon, SettingsIcon, SearchIcon, Menu2Icon } from 'vue-tabler-icons'
 // import ProfileDD from './ProfileDD.vue';
 import Searchbar from './SearchBarPanel.vue';
 import RegisterModal from '@/views/authentication/auth/RegisterModal.vue';
+import LoginModal from '@/views/authentication/auth/LoginModal.vue';
 
 
 const customizer = useCustomizerStore();
@@ -114,13 +115,8 @@ function searchbox() {
      -->
     
     <v-btn class="ms-4">Nosotros</v-btn>
-    <v-btn class="ms-4 boton"  rounded="xl" elevation="2" >Iniciar Sesión</v-btn>
+    <LoginModal/>
     <RegisterModal />
-    
-
-
-
-    
 
   </v-app-bar>
 </template>

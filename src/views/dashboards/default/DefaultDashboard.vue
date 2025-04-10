@@ -14,7 +14,7 @@ import Nosotros from './components/Nosotros.vue';
 <template>
   <v-row justify="center" class="fila">
     
-    <v-col cols="12" md="5">
+    <v-col cols="12" md="5" id="gradiente">
       <Carrusel />
     </v-col>
 
@@ -83,5 +83,9 @@ import Nosotros from './components/Nosotros.vue';
 
   .card{
     align-items: center;
+  }
+
+  #gradiente{
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
   }
 </style>
