@@ -6,10 +6,10 @@ import AuthLogin from '../authForms/AuthLogin.vue';
 <template>
   <v-row class="h-screen" no-gutters>
     <!---Left Part-->
-    <v-col cols="12" class="d-flex align-center bg-lightprimary">
+    <v-col cols="12" class="d-flex align-center">
       <v-container>
         <div class="pa-7 pa-sm-12">
-          <v-row justify="center">
+          <v-row justify="center" >
             <v-col cols="12" lg="10" xl="6" md="7">
               <v-card elevation="0" class="loginBox">
                 <v-card variant="outlined">
@@ -43,4 +43,6 @@ import AuthLogin from '../authForms/AuthLogin.vue';
   max-width: 475px;
   margin: 0 auto;
 }
+
+
 </style>

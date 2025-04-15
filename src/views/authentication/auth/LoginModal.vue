@@ -1,9 +1,9 @@
 <template>
     <div>
-      <v-btn @click="dialog = true" rounded="xl" elevation="2" class="ms-4">Iniciar Sesión</v-btn>
+      <v-btn @click="dialog = true" rounded="xl" elevation="2" class="ms-4 boton">Iniciar Sesión</v-btn>
   
       <v-dialog v-model="dialog" max-width="900px">
-        <v-card>
+        <v-card class="modal-card">
           <v-card-text>
             <LoginPage/>
           </v-card-text>
@@ -21,3 +21,15 @@
 import LoginPage from '../LoginPage.vue';
   const dialog = ref(false)
 </script>
+
+<style>
+.boton{
+  background-color: #d1e3b1;
+}
+
+  .modal-card {
+    background-color: white !important;
+}
+
+
+</style>

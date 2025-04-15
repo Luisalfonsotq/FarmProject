@@ -1,6 +1,6 @@
 <template>
     <div>
-      <v-btn @click="dialog = true" rounded="xl" elevation="2" class="ms-4">Registrarse</v-btn>
+      <v-btn @click="dialog = true" rounded="xl" elevation="2" class="ms-4 color">Registrarse</v-btn>
   
       <v-dialog v-model="dialog" max-width="900px">
         <v-card>
@@ -21,3 +21,11 @@
     import RegisterPage from './RegisterPage.vue';
     const dialog = ref(false)
 </script>
+
+<style scoped>
+.color{
+  background-color: #25632d;
+  color: white;
+}
+
+</style>

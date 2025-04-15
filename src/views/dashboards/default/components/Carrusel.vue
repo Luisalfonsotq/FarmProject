@@ -5,18 +5,16 @@
     :show-arrows="false" 
     class="rounded-md" 
     delimiter-icon="mdi-square" 
-    height="300"
+    height="350"
     hide-delimiters
     cycle>
       <v-carousel-item class="position-relative" v-for="(data, i) in info" :key="i" :src="images[i]" aspect-ratio="16/9"
         cover>
         <v-hover v-slot="{ props: hoverProps, isHovering }">
-          <v-sheet v-bind="hoverProps" :class="[
-            'mx-auto',
-            isHovering ? 'opacity-100' : 'opacity-50'
-          ]" color="#ffffff" class="position-absolute bottom-0">
+          <v-sheet 
+          class="position-absolute bottom-0">
             <div class="d-flex fill-height justify-center align-center carouselText">
-              <div class="text-h3">
+              <div class="text-h3 carrusel-text">
                 {{ data }}
               </div>
             </div>
@@ -51,6 +49,7 @@ const info = [
 .card-carousel{
   background: transparent !important;
   margin: 50px;
+  background-color: #25632d;
 }
 .carousel {
   border-radius: 25px;
@@ -60,4 +59,15 @@ const info = [
   border-radius: 25px;
 
 }
+
+.carrusel-text{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  padding: 2%;
+}
+
+
+
+
 </style>

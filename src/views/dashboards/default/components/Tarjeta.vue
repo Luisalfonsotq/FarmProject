@@ -20,6 +20,9 @@
 </template>
 
 <style scoped>
+  p{
+    color: white;
+  }
   .empanada {
     height: auto;
     width: 350px;
@@ -36,7 +39,7 @@
     height: auto;
   }
   .empanada>div:last-child>p{
-    background: white;
+    background: #25632d;
     padding: 10px;
     height: 150px;
     border-bottom-left-radius: 180px;

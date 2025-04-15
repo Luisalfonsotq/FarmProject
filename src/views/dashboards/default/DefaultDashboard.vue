@@ -14,14 +14,14 @@ import Nosotros from './components/Nosotros.vue';
 <template>
   <v-row justify="center" class="fila">
     
-    <v-col cols="12" md="5" id="gradiente">
+    <v-col cols="12" md="5">
       <Carrusel />
     </v-col>
 
     <v-col cols="6" md="5" class="card">
       <Tarjeta />
     </v-col>
-
+ 
    
     
   
@@ -70,22 +70,15 @@ import Nosotros from './components/Nosotros.vue';
 
 <style scoped>
   .fila{
-    background-color: #33691e;
+    background: #D1E3B1;
     height: 500px;
     align-items: center;
   }
-  .fila1{
-    background-color:#568142;
-    height: 500px;
-    align-items: center;
-  }
-
-
+ 
   .card{
-    align-items: center;
+    display: grid;
+    justify-content: center;
+    align-content: center;
   }
 
-  #gradiente{
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
-  }
 </style>
