@@ -45,11 +45,11 @@ const info = [
 
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .card-carousel{
   background: transparent !important;
   margin: 50px;
-  background-color: #25632d;
+  background-color: $verdeHerdixOscuro;
 }
 .carousel {
   border-radius: 25px;

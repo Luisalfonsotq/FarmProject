@@ -19,7 +19,7 @@
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
   p{
     color: white;
   }
@@ -39,7 +39,8 @@
     height: auto;
   }
   .empanada>div:last-child>p{
-    background: #25632d;
+    // background: #25632d;
+    background-color: $verdeHerdixOscuro;
     padding: 10px;
     height: 150px;
     border-bottom-left-radius: 180px;

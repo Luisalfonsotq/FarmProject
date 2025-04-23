@@ -4,7 +4,7 @@ import AuthLogin from './authForms/AuthLogin.vue';
 </script>
 
 <template>
-  <v-row class="h-screen" no-gutters>
+  <v-row class="h-screen fila" no-gutters>
     <!---Left Part-->
     <v-col cols="12" class="d-flex align-center bg-lightprimary">
       <v-container>
@@ -42,5 +42,9 @@ import AuthLogin from './authForms/AuthLogin.vue';
 .loginBox {
   max-width: 475px;
   margin: 0 auto;
+}
+
+.fila{
+  background-color: $verdeHerdixOscuro;
 }
 </style>

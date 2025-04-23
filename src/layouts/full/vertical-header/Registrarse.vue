@@ -21,7 +21,7 @@
         max-height="auto"
 
         >
-        <div>
+        <div class="conte">
           <RegisterPage/>
         </div>
 
@@ -52,10 +52,14 @@ import { shallowRef } from 'vue'
   const dialog = shallowRef(false)
 </script>
 
-<style>
-.boton{
-  background-color: white;
-  color:black;
+<style scoped lang="scss">
+// .boton{
+//   background-color: $verdeHerdixOscuro;
+//   // color:black;
   
+// }
+
+.conte{
+  background-color: $verdeHerdixOscuro;
 }
 </style>

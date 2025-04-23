@@ -2,7 +2,7 @@
   import { RouterView } from 'vue-router';
   import VerticalSidebarVue from './vertical-sidebar/VerticalSidebar.vue';
   import VerticalHeaderVue from './vertical-header/VerticalHeader.vue';
-  import Customizer from './customizer/CustomizerPanel.vue';
+  import CustomizerPanel from './customizer/CustomizerPanel.vue';
   import FooterPanel from './footer/FooterPanel.vue';
   import { useCustomizerStore } from '../../stores/customizer';
   const customizer = useCustomizerStore();
@@ -14,7 +14,7 @@
       theme="PurpleTheme"
       :class="[customizer.fontTheme, customizer.mini_sidebar ? 'mini-sidebar' : '', customizer.inputBg ? 'inputWithbg' : '']"
     >
-      <Customizer />
+      <CustomizerPanel />
       <VerticalSidebarVue />
       <VerticalHeaderVue />
 
@@ -45,10 +45,9 @@
   </v-locale-provider>
 </template>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
 .page-wrapper{
-  /* background-image:url("/img/fondo_ganadero.jpg") ; */
-  background-color: #f8f9f9;
+  background-color: $white;
 }
 
 </style>

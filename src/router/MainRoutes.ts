@@ -45,6 +45,11 @@ const MainRoutes = {
       name: 'Colors',
       path: '/utils/colors',
       component: () => import('@/views/utilities/colors/ColorPage.vue')
+    },
+    {
+      name:'Nosotros',
+      path:'/utils/nosotros',
+      component: () => import('@/views/dashboards/default/components/Nosotros.vue')
     }
   ]
 };

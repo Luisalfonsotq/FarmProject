@@ -16,10 +16,11 @@
         </div>
     </div>
 </template>
-<style scoped>
+<style scoped lang="scss">
     .container{
         display: flex;
         padding: 40px;
+        background-color: $verdeHerdixClaro;
     }
 
     .texto{

@@ -18,7 +18,7 @@ function clearoptions() {
 <!-- Customizer -->
 <!------------------------------------->
 <template>
-  <v-navigation-drawer app temporary elevation="10" location="right" v-model="customizer.Customizer_drawer" width="350">
+  <v-navigation-drawer app temporary elevation="10" location="right" v-model="customizer.Customizer_drawer" width="550">
     <perfect-scrollbar style="height: 100%">
       <div>
         <v-row class="ma-0">
