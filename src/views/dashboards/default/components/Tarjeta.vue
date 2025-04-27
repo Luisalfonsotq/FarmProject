@@ -3,10 +3,10 @@
 
     <div class="seccion">
       <img 
-        :width="400"
+        :width="300"
         aspect-ratio="16/9" 
         class="logo" 
-        src="/public/HERDIX-LOGO-copia.svg"
+        src="/public/HERDIX.svg"
       >
     </div>
 
@@ -35,7 +35,7 @@
     width: 100%;
   }
   .empanada>div:first-child{
-    width: 200px !important;
+    width: 350px !important;
     height: auto;
   }
   .empanada>div:last-child>p{
@@ -48,7 +48,9 @@
   }
   .logo{
     width: 100%;
-    height: auto; 
+    // height: auto;
+    height: 100%;
+
   }
 
 </style>

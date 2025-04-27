@@ -15,13 +15,15 @@
       :class="[customizer.fontTheme, customizer.mini_sidebar ? 'mini-sidebar' : '', customizer.inputBg ? 'inputWithbg' : '']"
     >
       <CustomizerPanel />
-      <VerticalSidebarVue />
+      <!-- Nav bar -->
       <VerticalHeaderVue />
+      <!-- Side bar -->
+      <VerticalSidebarVue />
 
       <v-main>
         <v-container fluid class="page-wrapper">
           <div>
-            
+            <!-- Rutas -->
             <RouterView />
             <v-btn
               class="customizer-btn"
@@ -35,11 +37,13 @@
             </v-btn>
           </div>
         </v-container>
+        <!-- Footer -->
         <v-container fluid class="pt-0">
           <div>
             <FooterPanel />
           </div>
         </v-container>
+
       </v-main>
     </v-app>
   </v-locale-provider>

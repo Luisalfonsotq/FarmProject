@@ -24,7 +24,7 @@ function validate(values: any, { setErrors }: any) {
 </script>
 
 <template>
-  <v-btn block color="primary" variant="outlined" class="text-lightText googleBtn">
+  <v-btn block  variant="outlined" class="text-lightText googleBtn" rounded="md">
     <img :src="Google" alt="google" />
     <span class="ml-2">Sign in with Google</span></v-btn
   >
@@ -35,7 +35,7 @@ function validate(values: any, { setErrors }: any) {
       <v-divider class="custom-devider" />
     </v-col>
   </v-row>
-  <h5 class="text-h5 text-center my-4 mb-8">Sign in with Email address</h5>
+  <h5 class="text-h5 text-center my-4 mb-4">Sign in with Email address</h5>
   <Form @submit="validate" class="mt-7 loginForm" v-slot="{ errors, isSubmitting }">
     <v-text-field
       v-model="username"
@@ -77,7 +77,7 @@ function validate(values: any, { setErrors }: any) {
         <a href="javascript:void(0)" class="text-primary text-decoration-none">Forgot password?</a>
       </div>
     </div>
-    <v-btn color="secondary" :loading="isSubmitting" block class="mt-2" variant="flat" size="large" :disabled="valid" type="submit">
+    <v-btn  :loading="isSubmitting" block class="mt-2 boton" variant="flat" size="large" :disabled="valid" type="submit" rounded="md">
       Sign In</v-btn
     >
     <div v-if="errors.apiError" class="mt-2">
@@ -90,12 +90,17 @@ function validate(values: any, { setErrors }: any) {
   </div>
 </template>
 <style lang="scss">
+.boton{
+  background-color: $verdeHerdixOscuro;
+  color: $white;
+}
 .custom-devider {
   border-color: rgba(0, 0, 0, 0.08) !important;
 }
 .googleBtn {
   border-color: rgba(0, 0, 0, 0.08);
   margin: 30px 0 20px 0;
+  background-color: $white;
 }
 .outlinedInput .v-field {
   border: 1px solid rgba(0, 0, 0, 0.08);

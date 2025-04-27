@@ -20,7 +20,8 @@
     .container{
         display: flex;
         padding: 40px;
-        background-color: $verdeHerdixClaro;
+        background-color: $white;
+        
     }
 
     .texto{

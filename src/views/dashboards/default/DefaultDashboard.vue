@@ -29,9 +29,28 @@ import Nosotros from './components/Nosotros.vue';
 
 <style scoped lang="scss">
   .fila{
-    background:  $verdeHerdixClaro;
+    background:  $white;
     height: 500px;
     align-items: center;
+  }
+
+  @keyframes gradient{
+    0%{
+      background-position: 0% 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0% 50%;
+    }
+  }
+
+  .fila{
+    height: 500px;
+    background: linear-gradient(-45deg,#D1E3B1, #25632d);
+    background-size: 400% 400%;
+     animation: gradient 15s ease infinite;
   }
  
   .card{
