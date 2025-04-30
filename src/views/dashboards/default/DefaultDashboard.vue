@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Carrusel from './components/Carrusel.vue';
 import Tarjeta from './components/Tarjeta.vue';
-import Nosotros from './components/Nosotros.vue';
+import Nosotros from './components/NosotrosView.vue';
 
 </script>
 

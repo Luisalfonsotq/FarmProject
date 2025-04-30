@@ -49,7 +49,7 @@ const MainRoutes = {
     {
       name:'Nosotros',
       path:'/utils/nosotros',
-      component: () => import('@/views/dashboards/default/components/Nosotros.vue')
+      component: () => import('@/views/dashboards/default/components/NosotrosView.vue')
     }
   ]
 };

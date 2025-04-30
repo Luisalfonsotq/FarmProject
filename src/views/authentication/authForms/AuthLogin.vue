@@ -26,7 +26,7 @@ function validate(values: any, { setErrors }: any) {
 <template>
   <v-btn block  variant="outlined" class="text-lightText googleBtn" rounded="md">
     <img :src="Google" alt="google" />
-    <span class="ml-2">Sign in with Google</span></v-btn
+    <span class="ml-2">Modificado</span></v-btn
   >
   <v-row>
     <v-col class="d-flex align-center">
@@ -77,7 +77,7 @@ function validate(values: any, { setErrors }: any) {
         <a href="javascript:void(0)" class="text-primary text-decoration-none">Forgot password?</a>
       </div>
     </div>
-    <v-btn  :loading="isSubmitting" block class="mt-2 boton" variant="flat" size="large" :disabled="valid" type="submit" rounded="md">
+    <v-btn  :loading="isSubmitting" block class="mt-2 boton" color="black" variant="flat" size="large" :disabled="valid" type="submit" rounded="md">
       Sign In</v-btn
     >
     <div v-if="errors.apiError" class="mt-2">

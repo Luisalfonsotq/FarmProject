@@ -1,0 +1,93 @@
+<template>
+    <div>
+      <v-btn @click="dialog = true" rounded="xl" elevation="2" class="ms-4 boton">Iniciar Sesión</v-btn>
+  
+      <v-dialog v-model="dialog" max-width="400px">
+        <v-card-text >
+                    <!---Left Part Logo -->
+                    <v-row>
+                      <v-col cols="12" class="text-center">
+                        <img 
+                        src="/public/HERDIX.svg"
+                        width="150"
+                        height="150"/>
+                        <!-- <Logo /> -->
+                        <h2 class=" text-h2 mt-4 titulo2">Lleva tu finca al proximo nivel</h2>
+                        <h4 class="text-disabled text-h4 mt-3">Ingrese su usuario</h4>
+                      </v-col>
+                    </v-row>
+                    <!---Left Part Logo -->
+
+                    <!---Left Part Form-->
+                    <LoginPage />
+                    <!---Left Part Form-->
+                  </v-card-text>
+      </v-dialog>
+    </div>
+  </template>
+
+  <script setup>
+  import { ref } from 'vue'
+import LoginPage from '@/views/authentication/authForms/AuthLogin.vue';
+  const dialog = ref(false)
+</script>
+
+<style>
+.boton{
+  background-color: #d1e3b1;
+}
+
+  .modal-card {
+    background-color: white !important;
+}
+
+
+</style>
+
+
+<template>
+    <div class="container">
+        <div class="texto">
+            <h2>Nosotros</h2>
+            <br>
+            <p>
+                Somos un grupo SENA de desarrolladores y hemos creado HERDIX para ayudarte a llevar el control de tu finca dedicada al ganado.<br>
+                En HERDIX podrás diseñar potreros únicos, programar eventos clave y recibir notificaciones de sus procesos.<br>
+                Simplifica la gestión y lleva tu negocio al siguiente nivel con HERDIX.
+            </p>
+        </div>
+        <div class="img">
+            <img src="/public/HERDIX-LOGO-copia.svg" alt="logo" width="400">
+        </div>
+    </div>
+</template>
+
+<style scoped lang="scss">
+.container {
+    display: flex;
+    padding: 40px;
+    background-image: url('/public/img/fondo.jpg');
+    background-size: cover; /* Ensures the image covers the container */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    position: relative; /* Ensures child elements are positioned relative to this container */
+    min-height: 100vh; /* Optional: ensures the container takes at least the full viewport height */
+}
+
+.texto {
+    text-align: center;
+    align-content: center;
+    font-size: larger;
+    font-weight: 900;
+    padding: 40px;
+    color: black;
+    text-shadow: 3px 3px 0px white, 5px 5px 0px rgba(0, 0, 0, 0.2); /* Fixed text-shadow syntax */
+    z-index: 1; /* Ensures text is above the background */
+}
+
+.img {
+    margin: 20px;
+    align-self: center;
+    z-index: 1; /* Ensures logo is above the background */
+}
+</style>
